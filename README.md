@@ -21,6 +21,7 @@ In this section, I learnt how Dialogflow connects with backend systems to provid
 
 ### Integration of Dialogflow with Actions on Google 
 
+Once the agent is built on Dialogflow, I used the one-click integrations to connect to various platforms such as google assistant and web. I integrated Dialogflow with Actions on Google to enable the chatbot as a Google Action on Google Home or Assistant. I conducted Beta Testing for the chatbot on Actions on Google.
 
 ### Integration of Dialogflow with Telephony Gateway
 
