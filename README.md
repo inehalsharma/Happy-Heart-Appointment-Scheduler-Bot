@@ -51,6 +51,10 @@ I created a fulfillment using inline editor and integrated it with BigQuery. Usi
 
 ![Alt Text](Img1.gif)
 
+#### Appointments Booked on the Google Calender:  
+
+![Alt Text](CalView.png)
+
 ### Neomoprohic UX Prototype
 
 
