@@ -40,15 +40,16 @@ I created a fulfillment using inline editor and integrated it with BigQuery. Usi
 
 #### Web Based View:
 
-![Alt Text](https://media.giphy.com/media/hT1XJXS5UNx2VLRKun/giphy.gif)
+![Alt Text](https://media.giphy.com/media/W64Hu7Z4kboJWDmv5y/giphy.gif)
+
 
 #### Chat Window Based View:
 
-![Alt Text](Img1.gif)
+![Alt Text](https://media.giphy.com/media/hT1XJXS5UNx2VLRKun/giphy.gif)
 
 #### Dialogflow Tester Window Based View: 
 
-![Alt Text](Img2.gif)
+![Alt Text](Img1.gif)
 
 ### Neomoprohic UX Prototype
 
