@@ -5,4 +5,5 @@ Chatbot that can schedule an appointment at Happy Heart Cardiovascular Clinic.
 
 ![Test Image 1](logo.png)
 
+![Alt Text](Img1.gif)
 
