@@ -36,8 +36,20 @@ In this section, I integrated Dialogflow with Twilio messaging service for SMS w
 
 I created a fulfillment using inline editor and integrated it with BigQuery. Using BigQuery,  the chats data can be stored in a a database and queried and visualized to draw useful insights.
 
-### 
+### Demo of the Agent:
+
+#### Web Based View:
+
+![Alt Text](Img3.gif)
+
+#### Chat Window Based View:
+
+![Alt Text](Img1.gif)
+
+#### Dialogflow Tester Window Based View: 
+
+![Alt Text](Img2.gif)
 
 ### Neomoprohic UX Prototype
-![Alt Text](Img1.gif)
+
 
