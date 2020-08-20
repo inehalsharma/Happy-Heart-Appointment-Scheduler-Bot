@@ -30,6 +30,8 @@ It is used to build conversational IVR (interactive voice response) solutions th
 
 ### Integration of Dialogflow with Twilio Messaging Service
 
+In this section, I integrated Dialogflow with Twilio messaging service for SMS which allows to easily create Twilio bots with natural language understanding. Programmable SMS service from Twilio makes sending and receiving SMS easily. In order to test the agent and Twilio integration use text messaging on a phone. Send text message to the number that was assigned to the Twilio messaging service and chat with the agent.
+
 ### Integration of Dialogflow with BigQuery
 
 ### Neomoprohic UX Prototype
