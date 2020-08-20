@@ -40,7 +40,7 @@ I created a fulfillment using inline editor and integrated it with BigQuery. Usi
 
 #### Web Based View:
 
-![Alt Text](Img3.gif)
+![Alt Text]("https://giphy.com/embed/hT1XJXS5UNx2VLRKun")
 
 #### Chat Window Based View:
 
