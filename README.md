@@ -25,6 +25,9 @@ Once the agent is built on Dialogflow, I used the one-click integrations to conn
 
 ### Integration of Dialogflow with Telephony Gateway
 
+The Telephony Gateway feature provides a telephone interface to the Dialogflow agent.
+It is used to build conversational IVR (interactive voice response) solutions that integrate with the rest of the call center network. Currently (the service is in beta), you can select a telephone number hosted by Google. The biggest advantage of the telephony gateway is that it can be used to create the agent for chat or messaging services and turn it into an IVR without much effort. You just assign a phone number to the chatbot that is already built and provide the same experience to users across the phone and web.
+
 ### Integration of Dialogflow with Twilio Messaging Service
 
 ### Integration of Dialogflow with BigQuery
