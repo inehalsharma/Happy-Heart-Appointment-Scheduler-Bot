@@ -57,7 +57,7 @@ I created a fulfillment using inline editor and integrated it with BigQuery. Usi
 
 ### Neomoprohic UX Prototype
 
-Protoyped the UI of the agent using neumorphic design in Figma.The prototype can be viewed at the following link:
+Protoyped the UI of the agent using neumorphic design in Figma.The prototype can be viewed at the following link: (Click on the mic icon at the bottom of the screen to navigate to the next screen)
 
 https://www.figma.com/proto/q5Nw4E4Vu2hdenZ7jBKknb/Neumorphism-UI-Kit?node-id=91%3A231&scaling=scale-down
 
