@@ -1,14 +1,22 @@
-# Happy Heart Appointment Scheduler Bot
+# Appointment Scheduler Bot for Happy Hearts Cardiovascular Clinic
 
 ![Test Image 1](logo.png)
 
 ## Introduction
+For human beings, conversation is natural since it is a part of our everyday lives. We fundamentally understand it and all the nuances around it. This is why trying to teach a machine to have a conversation is very difficult. People tend to ask for information in various different ways, which makes the entire process even more complicated. For example, to ask Google Assistant or Alexa about the weather outside, I could use the following phrases:
+What is the temperature now?
+What is the weather like outside?
+Is is going to rain tomorrow?
+and this list goes on and on. 
+To teach a machine to respond to all these questions, we would need a matrix of conditions to figure out all the edge cases for all the ways that the user could ask for a single information. This process is tedious and not practically maintainable. To overcome this issue, we use Natural Language Understanding(NLU). NLU is a technology that helps translate human language into computer language and vice versa. It is widely used in chatbots or conversational agents to redefine customer expectations in a personalized manner.
+I undertook this project to understand how NLU drives better conversations with users. I used Google Dialogflow to get a hands-on experience with building chatbots and training them to understand and respond to users' questions. Dialogflow is a service that lets you build conversation agents on top of your products and services. It provides a powerful NLU engine to process and understand what the users are looking for.
 
 ## Goal
-Design a Dialogflow agent that schedules an appointment for you at the Happy Heart Cardiovascular Clinic.
+Design a Dialogflow agent that schedules an appointment for patients at the Happy Heart Cardiovascular Clinic.
 
 ## Tasks Accomplished and Technologies Used
-In this project, I have created a conversational agent that asks the user for his/her details and checks whether an appointment slot is available on the day and the time, the user has entered.If yes, the agent confirms the appointment, otherwise, it asks the user to input another time slot.The approved time slot is added on the [Google Calander](#integration-of-dialogflow-with-google-calendar) by the agent.
+In this project, I have created a conversational agent that asks the user for his/her details. The agent checks whether an appointment slot is available on the date and time that the user desires.If yes, the agent confirms the appointment. Otherwise, it asks the user for another time slot. The agent adds the scheduled appointment to the user's [Google Calander](#integration-of-dialogflow-with-google-calendar).
+
 To experiment with different technolgoies and to increase the reach of the chatbot, I also integrated the agent with:
 
 i)[Telephony Gateway](#integration-of-dialogflow-with-telephony-gateway)
@@ -19,16 +27,15 @@ iii)[Big Query on the Google Cloud Platform](#integration-of-dialogflow-with-big
 
 iv)[Integrated the bot with Google Vision API]
 
-A brief description of these integrations is explained in the following sections. To experiment with the UI of the bot, I designed a simple [front-end] for the bot using Django framework. I also designed a [Figma protoype](#neomoprohic-ux-prototype) of the chatbot UI for mobile applications using the minimal neomorphism design. 
+A brief description of these integrations is explained in the following sections. To experiment with the UI, I designed a simple [front-end] for the agent using Django framework. I also designed a [Figma protoype](#neomoprohic-ux-prototype) of the chatbot UI for mobile applications using the minimal neomorphism design. 
 
 ### Integration of Dialogflow with Google Calendar
 
-In this section, I learnt how Dialogflow connects with backend systems to provide rich and dynamic responses to users questions. In the agent’s GCP project, I enabled Google Calendar API and a service account to access Google calendar. Then I created the fulfillment and used the credentials I generated for the calendar access to connect it with the fulfillment. Finally I tested to see if the calendar invites are being set up per user request.
+In this section, I learnt how Dialogflow connects with backend systems to provide rich and dynamic responses to user questions. In the agent’s GCP project, I enabled Google Calendar API and a service account to access Google calendar. Then, I created the fulfillment and used the credentials I generated for the calendar to connect the calender with the fulfillment. Finally, I verified if the calendar invites are being set up as per the user's appointment.
 
 ### Integration of Dialogflow with Telephony Gateway
 
-The Telephony Gateway feature provides a telephone interface to the Dialogflow agent.
-It is used to build conversational IVR (interactive voice response) solutions that integrate with the rest of the call center network. Currently (the service is in beta), you can select a telephone number hosted by Google. The biggest advantage of the telephony gateway is that it can be used to create the agent for chat or messaging services and turn it into an IVR without much effort. You just assign a phone number to the chatbot that is already built and provide the same experience to users across the phone and web.
+The Telephony Gateway feature provides a telephone interface to the Dialogflow agent. It is used to build conversational IVR (interactive voice response) solutions that integrate with the rest of the call center network. Currently (the service is in beta), you can select a telephone number hosted by Google. The biggest advantage of the telephony gateway is that it can be used to create the agent for chat or messaging services and turn it into an IVR without much effort. You just assign a phone number to the chatbot that is already built and provide the same experience to users across the phone and web.
 
 ### Integration of Dialogflow with Twilio Messaging Service
 
@@ -36,7 +43,7 @@ In this section, I integrated Dialogflow with Twilio messaging service for SMS w
 
 ### Integration of Dialogflow with BigQuery
 
-I created a fulfillment using inline editor and integrated it with BigQuery. Using BigQuery,  the chats data can be stored in a a database and queried and visualized to draw useful insights.
+I created a fulfillment using inline editor and integrated it with BigQuery. Using BigQuery,  the appointment data can be stored in a a database and queried and visualized to draw useful insights.
 
 ### Demo of the Agent:
 
