@@ -1,16 +1,20 @@
 # Happy Heart Appointment Scheduler Bot
 
+![Test Image 1](logo.png)
+
 ## Introduction
 
 ## Goal
 Design a Dialogflow agent that schedules an appointment for you at the Happy Heart Cardiovascular Clinic.
 
 ## Glossary
+Before diving into the project, it would be good to have ome basic knowledge about the key terminoogies used in the project:
+i)[Agents](https://cloud.google.com/dialogflow/es/docs/agents-overview)
+ii)[Intents](https://cloud.google.com/dialogflow/es/docs/intents-overview)
+iii)[Entities](https://cloud.google.com/dialogflow/es/docs/entities-overview)
+iv)[Context](https://cloud.google.com/dialogflow/es/docs/contexts-overview)
 
-## Project Overview
-
-![Test Image 1](logo.png)
-
+## Tasks Accomplished and Technologies Used
 In this project, I have created a conversational agent that asks the user for his/her details and checks whether an appointment slot is available on the day and the time, the user has entered.If yes, the agent confirms the appointment, otherwise, it asks the user to input another time slot.The approved time slot is added on the [Google Calander](#integration-of-dialogflow-with-google-calendar) by the agent.
 To experiment with different technolgoies and to increase the reach of the chatbot, I also integrated the agent with:
 i)[Telephony Gateway](#integration-of-dialogflow-with-telephony-gateway)
