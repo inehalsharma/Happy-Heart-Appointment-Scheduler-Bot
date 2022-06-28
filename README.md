@@ -54,6 +54,11 @@ Programmable SMS service from Twilio makes sending and receiving SMS easily. In 
 In this section, I enhanced the agent by creating an integration with BigQuery. I created a dataset and a table in BigQuery on GCP and connected it to my fulfillment. Using the fulfillment, I can send the appoinment data to BigQuery dataset, store it, and visualize it to draw useful insights.I tested the agent to ensure that the appointment data is being send to BigQuery. I also explored the data in Data Studio using the one-click Explore feature in BigQuery. The figure below demonstrates the workflow for the BigQuery functionality.
 ![Test-Image3](test-image3.png)
 
+### Django Front End for the Agent
+In this section, I created an App Engine front end for the Dialogflow agent. The front-end has a text input and a submit button to send chat messages. All the messages back and forth are visible on the chat window. The chat app is served on App Engine and the front end is built in Python using the Django framework.The App Engine interacts with CloudSQL for any database requests and it interacts with the Dialogflow agent via the Dialogflow API. the figurs below show the front end for the agent and the workflow for the application.
+![Test-Image4](chat app.png)
+![Test-Image5](workflow.png)(Source: Google Documentation)
+
 ### Demo of the Agent:
 
 #### Web Based View:
