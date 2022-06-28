@@ -7,19 +7,16 @@
 ## Goal
 Design a Dialogflow agent that schedules an appointment for you at the Happy Heart Cardiovascular Clinic.
 
-## Glossary
-Before diving into the project, it would be good to have ome basic knowledge about the key terminoogies used in the project:
-i)[Agents](https://cloud.google.com/dialogflow/es/docs/agents-overview)
-ii)[Intents](https://cloud.google.com/dialogflow/es/docs/intents-overview)
-iii)[Entities](https://cloud.google.com/dialogflow/es/docs/entities-overview)
-iv)[Context](https://cloud.google.com/dialogflow/es/docs/contexts-overview)
-
 ## Tasks Accomplished and Technologies Used
 In this project, I have created a conversational agent that asks the user for his/her details and checks whether an appointment slot is available on the day and the time, the user has entered.If yes, the agent confirms the appointment, otherwise, it asks the user to input another time slot.The approved time slot is added on the [Google Calander](#integration-of-dialogflow-with-google-calendar) by the agent.
 To experiment with different technolgoies and to increase the reach of the chatbot, I also integrated the agent with:
+
 i)[Telephony Gateway](#integration-of-dialogflow-with-telephony-gateway)
+
 ii)[Twilio Messaging Service](#integration-of-dialogflow-with-twilio-messaging-service)
+
 iii)[Big Query on the Google Cloud Platform](#integration-of-dialogflow-with-bigquery)
+
 iv)[Integrated the bot with Google Vision API]
 
 A brief description of these integrations is explained in the following sections. To experiment with the UI of the bot, I designed a simple [front-end] for the bot using Django framework. I also designed a [Figma protoype](#neomoprohic-ux-prototype) of the chatbot UI for mobile applications using the minimal neomorphism design. 
