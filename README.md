@@ -51,7 +51,7 @@ Programmable SMS service from Twilio makes sending and receiving SMS easily. In 
 
 ### Integration of Dialogflow with BigQuery
 
-In this section, I enhanced the agent by creating an integration with BigQuery. I created a dataset and a table in BigQuery on GCP and connected it to my fulfillment. Using the fulfillment, I can send the appoinment data to BigQuery dataset, store it, and visualize it to draw useful insights.I tested the agent to ensure that the appointment data is being send to BigQuery. I also explored the data in Data Studio using the one-click Explore feature in BigQuery.The figure below demonstrates the workflow for the BigQuery functionality.
+In this section, I enhanced the agent by creating an integration with BigQuery. I created a dataset and a table in BigQuery on GCP and connected it to my fulfillment. Using the fulfillment, I can send the appoinment data to BigQuery dataset, store it, and visualize it to draw useful insights.I tested the agent to ensure that the appointment data is being send to BigQuery. I also explored the data in Data Studio using the one-click Explore feature in BigQuery. The figure below demonstrates the workflow for the BigQuery functionality.
 ![Test-Image3](test-image3.png)
 
 ### Demo of the Agent:
