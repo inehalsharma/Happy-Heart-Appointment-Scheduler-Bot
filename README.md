@@ -2,16 +2,17 @@
 
 Dialogflow Agent that schedules an appointment for you at the Happy Heart Cardiovascular Clinic.
 
-## Introduction
+## Project Overview
 
 ![Test Image 1](logo.png)
 
 In this project, I have created a conversational agent that asks the user for his/her details and checks whether an appointment slot is available on the day and the time, the user has entered.If yes, the agent confirms the appointment, otherwise, it asks the user to input another time slot.The approved time slot is added on the Google Calander by the agent.
 To experiment with different technolgoies and to increase the reach of the chatbot, I have also integrated the agent with:
-i) Actions on Google(Conducted Beta Testing)
-ii) Telephony Gateway
-iii) Twilio Messaging Service
-iv) Big Query on the Google Cloud Platform
+i) Telephony Gateway
+ii) Twilio Messaging Service
+iii) Big Query on the Google Cloud Platform
+iv) Created a front-end for the bot using Django 
+v) Integrated the bot with Google Vision API 
 
 A brief description of these integrations is explained in the following sections. I also designed a Figma protoype of the chatbot UI using minimal neomorphism design and conducted a UX evaluation study to evaluate the users perspective about this latest trend.
 
