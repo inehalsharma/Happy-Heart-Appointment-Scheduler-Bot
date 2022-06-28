@@ -56,7 +56,7 @@ In this section, I enhanced the agent by creating an integration with BigQuery. 
 
 ### Django Front End for the Agent
 In this section, I created an App Engine front end for the Dialogflow agent. The front-end has a text input and a submit button to send chat messages. All the messages back and forth are visible on the chat window. The chat app is served on App Engine and the front end is built in Python using the Django framework.The App Engine interacts with CloudSQL for any database requests and it interacts with the Dialogflow agent via the Dialogflow API. the figurs below show the front end for the agent and the workflow for the application.
-![Test-Image4](chat app.png)
+![Test-Image4](chatapp.png)
 ![Test-Image5](workflow.png)(Source: Google Documentation)
 
 ### Demo of the Agent:
