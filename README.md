@@ -34,6 +34,9 @@ iv)[Google Vision API]
 A brief description of these integrations is explained in the following sections. To experiment with the UI, I designed a simple [front-end] for the agent using Django framework. I also designed a [Figma protoype](#neomoprohic-ux-prototype) of the chatbot UI for mobile applications using the minimal neomorphism design. 
 
 ## High-Level Architecture of the Application
+This section depicts the application from an architectural stand-point and demonstrates its functional components. The chat application is hosted on Google App Engine. The front end for the application is built in Python using Django framework. The App Engine interacts with CloudSQL for any database requests. When the users upload any files, we save them to Google Cloud Storage and the application with interact with our Dialogflow agent through the Dialogflow API. The agent is futher enchanced by integrating it with Google Calendar, Telephony Gateway, Twilio Messaging Service, and BigQuery.
+![Test-Image0](workflow.png)
+(Source: Google Documentation)
 
 ### Integration of Dialogflow with Google Calendar
 
@@ -57,7 +60,10 @@ In this section, I enhanced the agent by creating an integration with BigQuery. 
 ### Django Front End for the Agent
 In this section, I created an App Engine front end for the Dialogflow agent. The front-end has a text input and a submit button to send chat messages. All the messages back and forth are visible on the chat window. The chat app is served on App Engine and the front end is built in Python using the Django framework.The App Engine interacts with CloudSQL for any database requests and it interacts with the Dialogflow agent via the Dialogflow API. the figurs below show the front end for the agent and the workflow for the application.
 ![Test-Image4](chatapp.png)
-![Test-Image5](workflow.png)(Source: Google Documentation)
+
+### Integration of Dialogflow with Google Vision API
+In this section, I further enchanced the agent by integrating it with Google Cloud Vision API. The main motivation behind this integration is to enable the user to upload an image to the chat application and expect a response that guides them further in the conversation. I updated the Django front end from the previous step and added an image upload functionality for uploading clinic invoices. The image is displayed on the front end and returns back the text detected in the image by processing it through the Vision API. The figure below shows the updated front end.
+![Test-Image5](visionapi.png)
 
 ### Demo of the Agent:
 
