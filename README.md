@@ -4,20 +4,24 @@
 
 ## Introduction
 For human beings, conversation is natural since it is a part of our everyday lives. We fundamentally understand it and all the nuances around it. This is why trying to teach a machine to have a conversation is very difficult. People tend to ask for information in various different ways, which makes the entire process even more complicated. For example, to ask Google Assistant or Alexa about the weather outside, I could use the following phrases:
+
 What is the temperature now?
+
 What is the weather like outside?
+
 Is is going to rain tomorrow?
+
 and this list goes on and on. 
-To teach a machine to respond to all these questions, we would need a matrix of conditions to figure out all the edge cases for all the ways that the user could ask for a single information. This process is tedious and not practically maintainable. To overcome this issue, we use Natural Language Understanding(NLU). NLU is a technology that helps translate human language into computer language and vice versa. It is widely used in chatbots or conversational agents to redefine customer expectations in a personalized manner.
-I undertook this project to understand how NLU drives better conversations with users. I used Google Dialogflow to get a hands-on experience with building chatbots and training them to understand and respond to users' questions. Dialogflow is a service that lets you build conversation agents on top of your products and services. It provides a powerful NLU engine to process and understand what the users are looking for.
+
+To teach a machine to respond to all these questions, we would need a matrix of conditions to figure out all the edge cases for all the ways that the user could ask for a single information. This process is tedious and not practically maintainable. To overcome this issue, we use Natural Language Understanding(NLU). NLU is a technology that helps translate human language into computer language and vice versa. It is widely used in chatbots or conversational agents and redefines the customer experience in a personalized manner.
 
 ## Goal
-Design a Dialogflow agent that schedules an appointment for patients at the Happy Heart Cardiovascular Clinic.
+I undertook this project to understand how NLU drives better conversations with users. I used Google Dialogflow to get a hands-on experience with building chatbots and training them to understand and respond to users' questions. Dialogflow is a service that lets you build conversation agents on top of our products and services. It provides a powerful NLU engine to process and understand what the users are looking for. The end deliverable of this project is a Dialogflow agent that schedules an appointment for patients at the Happy Heart Cardiovascular Clinic.
 
 ## Tasks Accomplished and Technologies Used
-In this project, I have created a conversational agent that asks the user for his/her details. The agent checks whether an appointment slot is available on the date and time that the user desires.If yes, the agent confirms the appointment. Otherwise, it asks the user for another time slot. The agent adds the scheduled appointment to the user's [Google Calander](#integration-of-dialogflow-with-google-calendar).
+In this project, I have created a conversational agent that asks the user for his/her details. The agent checks whether an appointment slot is available on the date and time that the user desires. If yes, the agent confirms the appointment. Otherwise, it asks the user for another time slot. The agent adds the scheduled appointment to the user's [Google Calander](#integration-of-dialogflow-with-google-calendar).
 
-To experiment with different technolgoies and to increase the reach of the chatbot, I also integrated the agent with:
+To experiment with different technolgoies and to increase the functionality of the chatbot, I also integrated the agent with:
 
 i)[Telephony Gateway](#integration-of-dialogflow-with-telephony-gateway)
 
@@ -25,13 +29,17 @@ ii)[Twilio Messaging Service](#integration-of-dialogflow-with-twilio-messaging-s
 
 iii)[Big Query on the Google Cloud Platform](#integration-of-dialogflow-with-bigquery)
 
-iv)[Integrated the bot with Google Vision API]
+iv)[Google Vision API]
 
 A brief description of these integrations is explained in the following sections. To experiment with the UI, I designed a simple [front-end] for the agent using Django framework. I also designed a [Figma protoype](#neomoprohic-ux-prototype) of the chatbot UI for mobile applications using the minimal neomorphism design. 
 
+## High-Level Architecture of the Application
+
 ### Integration of Dialogflow with Google Calendar
 
-In this section, I learnt how Dialogflow connects with backend systems to provide rich and dynamic responses to user questions. In the agent’s GCP project, I enabled Google Calendar API and a service account to access Google calendar. Then, I created the fulfillment and used the credentials I generated for the calendar to connect the calender with the fulfillment. Finally, I verified if the calendar invites are being set up as per the user's appointment.
+A chatbot needs to connect to a back end for transferring information to and fro from the business logic. In Dialoglfow, we make this connection using a fulfillment. A fulfillment is a piece of code that is deployed as a webhook and lets the Dialogflow agent call the business logic on a per-intent basis. During a conversation, this allows you to use the information extracted from Dialogflow's natural language processing to generate a dynamic response or to trigger an action on the back end. 
+In this section, I learnt how Dialogflow connects with backend systems to provide rich and dynamic responses to user questions. I enhanced the conversation agent by creating a fulfillment. I enabled the Google Calendar API for the Google Cloud Platform(GCP) project and used those API credentials to connect my fulfillemnt cloud function with Google calendar. Finally, I tested my agent by creating appointment requests in Google Calender. The figure below demonstrates the workflow for the Google Calender functionality.
+![Test-Image2](test-image2.png)
 
 ### Integration of Dialogflow with Telephony Gateway
 
